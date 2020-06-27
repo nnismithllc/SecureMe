@@ -1,1 +1,9 @@
-.background bg-primary
+body {
+    background-image: url(/images/image.jpg);
+
+}
+
+.card-body {
+font-size: 20px;
+color: blue;
+}
