@@ -12,7 +12,7 @@
   <body>
     <span class="border border-primary">
       <div class="container bg-primary">
-      <div class="row justify-items-center">
+      
      <div class="col-md-12 d-flex flex-column justify-content-center">
     <div class="wrapper">
       </div>  
@@ -20,24 +20,53 @@
       <header>
         <h1 class="big text-center">Password Generator</h1>
       </header>
+      <div class="container">
       <div class="card">
         <div class="card-header">
           <h2 class="text-center">Generate a Password</h2>
         </div>
       </div>
+
         <div class="card">
         <div class="card-body">
             <div class="text-center">
-          <textarea readonly id= "password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-          
+              <div class="row">
+                <div class="col-lg-10 col-sm-12">
+             
+          <textarea readonly id= "password" placeholder="Your Secure Password" aria-label="Generated Password"> </textarea>
+        <div class="container">
+        <div class="row">
+  <div class="text-center">
+        <input type="range" aria-valuemin="8" max="128" name="slider" id="text">
+        <div id="length">
         </div>
-        </div>
-        </div>
+</div>
+</div>
+</div>
 
+
+        <div class="container">
+          <div class="row">
+          <i class="fa fa-align-center" aria-hidden="true">
+      
+        <input type="checkbox" id="lowercase">
+        <label class="check-label" for="lowercase"><span class="checkbox">lowercase</label>
+        
+          <input type="checkbox" id="lowercase">
+        <label class="check-label" for="uppercase"><span class="checkbox">uppercase</label>
+        
+          <input type="checkbox" id="numbers">
+        <label class="check-label" for="lowercase"><span class="checkbox">numbers</label>
+       
+          <input type="checkbox" id="punctuation">
+        <label class="check-label" for="lowercase"><span class="checkbox">punctuation</label>
+        </div>
+      
+        
         <div class="card-footer">
             <div class="text-center">
           <button id="generate" class="btn btn-danger">Generate Password</button>
-          <button class="btn" id="clipboard"> </button>
+          <button class="btn" id="clipboard"></button>
         </div>
     
     <script src="script.js"></script>
