@@ -4,75 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <span class="border border-primary">
-      <div class="container bg-primary">
-      
-     <div class="col-md-12 d-flex flex-column justify-content-center">
+
+
     <div class="wrapper">
-      </div>  
-    
       <header>
-        <h1 class="big text-center">Password Generator</h1>
+        <h1>Password Generator</h1>
       </header>
-      <div class="container">
-      <div class="card">
+
+      <div class="card text">
         <div class="card-header">
-          <h2 class="text-center">Generate a Password</h2>
+          <h2>Generate a Password</h2>
         </div>
-      </div>
 
-        <div class="card">
         <div class="card-body">
-            <div class="text-center">
-              <div class="row">
-                <div class="col-lg-10 col-sm-12">
-             
-          <textarea readonly id= "password" placeholder="Your Secure Password" aria-label="Generated Password"> </textarea>
-        <div class="container">
-        <div class="row">
-  <div class="text-center">
-        <input type="range" aria-valuemin="8" max="128" name="slider" id="text">
-        <div id="length">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+          
         </div>
-</div>
-</div>
-</div>
-
-
-        <div class="container">
-          <div class="row">
-          <i class="fa fa-align-center" aria-hidden="true">
-      
-        <input type="checkbox" id="lowercase">
+        <div id="length">
+        <input type="range" aria-value min="8" max="128" name="slider" id="text">
+        
+        </div>
+      <div>
+        <i class="row text-center" aria-hidden="true"></i>
+          
+        <input type="checkbox" id="lowercase" checked>
         <label class="check-label" for="lowercase"><span class="checkbox">lowercase</label>
         
-          <input type="checkbox" id="lowercase">
+          <input type="checkbox" id="lowercase" checked >
         <label class="check-label" for="uppercase"><span class="checkbox">uppercase</label>
         
-          <input type="checkbox" id="numbers">
+          <input type="checkbox" id="numbers" checked>
         <label class="check-label" for="lowercase"><span class="checkbox">numbers</label>
-       
-          <input type="checkbox" id="punctuation">
+      
+          <input type="checkbox" id="punctuation" checked>
         <label class="check-label" for="lowercase"><span class="checkbox">punctuation</label>
+    </div>
+
+<div class="col-sm-12 text-center">
+
+     
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
         </div>
 
-      <div class="col-sm-12 text-center">
-        <button onclick="generatepassword"
-        
-        <div class="card-footer">
-            <div class="text-center">
-          <button id="generate" class="btn btn-danger">Generate Password</button>
-          <button class="btn" id="clipboard"></button>
-        </div>
-    
+      </div>
+    </div>
     <script src="script.js"></script>
-    </span>
   </body>
-</style>
 </html>
