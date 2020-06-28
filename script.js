@@ -1,5 +1,7 @@
 // Assignment Code
-var generateBtn = document.querySelector("generate");
+ document.querySelector("generate");
+ document.querySelector("copy");
+
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
@@ -7,11 +9,7 @@ var punctuation = "~`!@#$%^&*()_+|}{:<>?.,;[]=";
 
 // Write password to the #password input
 function writePassword() {
-  // var lowercaseInput= document.getElementById("lowercase");
-  // var uppercaseInput= document.getElementById("uppercase");
-  // var numbersInput= document.getElementById("numbers");
-  // var lowercaseInput= document.getElementById("lowercase");
-  // var password = generatedPassword();
+ 
   var userpassword = "";
   var passwordCharSet = "";
   
@@ -19,24 +17,12 @@ function writePassword() {
 
   if (lowercaseInput.checked){
 
-      // passwordCharSet+= lowercase;
-      // passwordCharSet+= uppercase;
-      // passwordCharSet+= numbers;
-      // passwordCharSet+= punctuation;
-
+     
 
       var size = passwordCharSet.length;
    }
 
-  //  if (uppercaseInput.checked){
-  //     passwordCharSet+= uppercase;
-  //   }
-  //   if (numbersInput.checked){
-  //     passwordCharSet+= numbers;
-  //   }
-  //   if (punctuationInput.checked){
-  //     passwordCharSet+= punctuation;
-  //   }
+ 
   
 
   for(var i = 0; i < size; i++) {
@@ -47,28 +33,11 @@ function writePassword() {
 
   document.getElementById("text").oninput =function () {
 
-  //   if (document.getElementById("text").value >7){
 
-  // document.getElementById("length").innerHTML = "Length: 8";
-    
-  }
-
-  // }
-
-
-  document.getElementById("display").value = userpassword;
-  document.getElementById("length").innerHTML = ("Length(8-128):");
+  document.getElementById("length").innerHTML = ("Length (8-128):");
 }
 
 
-  // var passwordText = document.querySelector("password");
-  // passwordText.value = password;
-
-  // function display (){
-  //   document.getElementById("display").select();
-  //   document.execCommand("copy");
-  //   alert("Password copied to the Clipboard!");
-  // }
-
 // addd event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("generate", writePassword);
+}
