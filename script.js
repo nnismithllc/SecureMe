@@ -70,5 +70,5 @@ function writePassword() {
   //   alert("Password copied to the Clipboard!");
   // }
 
-// Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+// addd event listener to generate button
+generateBtn.addEventListener("click", writePassword);
