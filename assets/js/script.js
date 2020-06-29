@@ -53,7 +53,7 @@ function generatePassword() {
         for (var i = 0; i < passwordLengthInput; i++) {
             newPassword += passwordCharset.charAt(Math.floor(Math.random() * passwordCharset.length));
         };
-        // localStorage.setItem("password", newPassword);
+        // return ("password", newPassword);
         return newPassword
     };
 };
@@ -69,9 +69,9 @@ function writePassword() {
 
 generateButton.addEventListener("click", writePassword);
 
-// function copyPassword() {
-//     passwordTextarea.select();
-//     document.execCommand("copy");
-//     passwordTextarea.innerHTML = "";
-// };
-// copyButton.addEventListener("click", copyPassword);
+function copyPassword() {
+    password.select();
+    document.execCommand("copy");
+    passwordTextarea.innerHTML = "";
+};
+copyButton.addEventListener("click", copyPassword);
