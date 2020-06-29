@@ -1,10 +1,12 @@
+/* Header Information */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 html,
+
+/* Body Information */
 body,
 .wrapper {
   height: 100%;
@@ -14,7 +16,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: darkred; 
 }
 
 .wrapper {
@@ -23,11 +25,12 @@ body {
   padding-right: 20px;
 }
 
+
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: white;
 }
 
 .card {
