@@ -4,23 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-
-
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
-
-      <div class="card text">
+      <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
-
         <div class="card-body">
           <textarea
             readonly
@@ -28,40 +23,12 @@
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
-          
         </div>
-        <div id="length">
-        <input type="range" aria-value min="8" max="128" name="slider" id="text">
-        
-        </div>
-      <div>
-        <i class="row text-center" aria-hidden="true"></i>
-          
-        <input type="checkbox" id="lowercase" checked>
-        <label class="check-label" for="lowercase"><span class="checkbox">lowercase</label>
-        
-          <input type="checkbox" id="lowercase" checked >
-        <label class="check-label" for="uppercase"><span class="checkbox">uppercase</label>
-        
-          <input type="checkbox" id="numbers" checked>
-        <label class="check-label" for="lowercase"><span class="checkbox">numbers</label>
-      
-          <input type="checkbox" id="punctuation" checked>
-        <label class="check-label" for="lowercase"><span class="checkbox">punctuation</label>
-    </div>
-
-<div class="col-sm-12 text-center">
-
-     
         <div class="card-footer">
-  
           <button id="generate" class="btn">Generate Password</button>
-
-          <button id= "copy" class="btn"> Copy Clipboard </button>
         </div>
-
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
